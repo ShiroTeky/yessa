@@ -1,0 +1,117 @@
+﻿doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title #{title} - Yessa Technologies
+    link(rel='stylesheet', type='text/css', href='/stylesheets/site.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/bootstrap.min.css')
+    link(href='/stylesheets/css/font-awesome.min.css' rel='stylesheet' type='text/css')
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/default.css')
+    link(rel='stylesheet' type='text/css' href='/stylesheets/css/complement.css')
+    link(rel='stylesheet' href='/stylesheets/css/flexslider.css' type='text/css' media='screen')
+    script(src='/javascripts/modernizr-2.6.2.js')
+    script(src='/javascripts/jquery-1.10.2.min.js')
+    script(src='/javascripts/bootstrap.min.js')
+    script(src='/socket.io-client/socket.io.js')
+    script(src='/javascripts/client.js')
+ body
+    .container
+      header
+        #top-info
+          .col-lg-8
+            span
+              i.fa.fa-phone.fa-2x
+              | +225 59 809314
+            span
+              i.fa.fa-envelope-o.fa-2x
+              |  tecleky.nguessan@gmail.com
+          .col-lg-4
+            ul.social-icons
+              li
+                a.facebook(href='#')
+                  i.fa.fa-facebook.fa-2x
+              li
+                a.twitter(href='#')
+                  i.fa.fa-twitter.fa-2x
+              li
+                a.google(href='#')
+                  i.fa.fa-google-plus.fa-2x
+              li
+                a.linkedin(href='#')
+                  i.fa.fa-linkedin.fa-2x
+      .row
+        .col-lg-8
+          .site-title
+            img(src='./images/logobleu.jpg', alt='#')
+            p
+              a(href='./')
+                | YESSA 
+                span#titleLogo Technologies
+          .site-offre
+            p Formations - Ingénierie - Licences
+        .col-lg-4
+      .menu-wrap
+        nav.navbar.navbar-inverse(role='navigation')
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href='/')    
+              img.navbar-brand(src='./images/home.png', alt='#')
+          .collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li
+                a(href='/') Accueil
+              li
+                a(href='/Product') Nos Produits
+              li
+                a(href='/About') Présentation
+              li
+                a(href='/Contact') Contact
+      div
+        block content
+      div
+        .chatzone
+          .section#chat
+            ul#messages
+            form(action='')
+              input#m(autocomplete='off')
+              button Send
+      footer
+        .footer-wrap
+          .footer
+            .panel-group
+              .col-lg-4.panel-info
+                .title
+                  h1 Nos Références
+                .content
+                  p
+                    | Phasellus scelerisque enim eget eros accumsa
+                    | Quisque euismod est vitae velit lobortis nec vo
+                    | Nullam non erat et nisl mattis mollis in Maecen
+                    | as at ipsum vel eros auctor fau
+                  .button
+                    a(href='#') MORE INFO
+              .col-lg-3.panel-info
+                .title
+                  h1 Nos produits
+                .content
+                  p
+                    | Produits Microsoft.
+                  .button
+                    a(href='#') MORE INFO
+              .col-lg-5.panel-info
+                .title
+                  h1 Actualités
+                .content
+                  ul
+                    li
+                      a(href='https://blogs.windows.com/buildingapps/2016/03/15/getting-started-with-app-design/') Multi-part series on app design for developers.
+                    li
+                      a(href='https://dev.windows.com/fr-fr/enterprise') L’entreprise au centre de la conception
+                    li
+                      a(href='https://support.office.com/fr-fr/article/Sc%C3%A9narios-incluant-Office-365-pour-les-entreprises-af07cb6b-980d-4f33-8599-322582767408?ui=fr-FR&rs=fr-FR&ad=FR') Scénarios incluant Office 365 pour les entreprises
+                    li.-no-border-bottom
+                      a(href='https://blogs.office.com/2016/03/15/new-reporting-portal-in-the-office-365-admin-center/') New reporting portal in the Office 365 admin center

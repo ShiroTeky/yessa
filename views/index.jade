@@ -1,0 +1,119 @@
+﻿extend layout
+ 
+block content
+    section.featured
+        .content-wrapper
+          hgroup.title
+        
+        section.slider
+          .flexslider
+            ul.slides
+              li
+                img(src='./images/media.jpg')
+                .flex-caption
+                  h3 Social et Web média
+                  p
+                    |Le monde est devenu un vaste réseau. Soyez mobile!
+                  a(href='./product') Voir+
+              li
+                img(src='./images/travail.jpg')
+                .flex-caption
+                  h3 Travailler en équipe
+                  p
+                    |Avec des outils de productivité et de mobilité
+                  a(href='/product') Voir+
+              li
+                img(src='./images/multiplatform.jpg')
+                .flex-caption
+                  h3 Applications multiplateformes
+                  p
+                    |Utilisez vos applications où que vous soyez.
+                    |sur Desktop, Windows phone, iPhone & Android
+                  a(href='/product') Voir+
+              li
+                img(src='./images/securite.jpg')
+                .flex-caption
+                  h3 Conformité
+                  p 
+                    |Audit et contrôles des systèmes informatiques
+                    |Sécurisation des informations
+                    |La gestion des nouveaux parc informatique
+                    |L'encadrement des pratiques et usages
+                  a(href='/product') Voir+
+              li
+                img(src='./images/diapositive5.jpg')
+                .flex-caption
+                  h3 Notre mission
+                  p 
+                    |Fournir un service personnalisé.
+                    |Faciliter vos prises de décision afin d'accroitre
+                    |vosperformances.
+                  a(href='/product') Voir+
+        section#set-3
+          .hi-icon-wrap.hi-icon-effect-3.hi-icon-effect-3b
+            .col-lg-4.col-sm-12
+              a.col-lg-12.col-md-6.hi-icon.hi-icon-screen(href='#set-3')
+              p.col-lg-12.col-sm-6
+                 |L'offre de formations de Yessa technologies est basée sur sa bonne maîtrise 
+                 |des produits Microsoft, tant du Online, que du On-Premise. Face à une dématérialisation 
+                 |du support physique en entreprise, ainsi qu'à une externalisation de la gestion des SI, 
+                 |nous proposons à nos clients des formations sur des produits et services Cloud
+                 |facilitant la migration en douceur de leur SI dans un environnement virtualisé ou Cloud.
+                 |Notre offre de formation comprend du développement multiplateforme, 
+                 |la gestion et l'administration des services O365.
+            .col-lg-4.col-sm-12
+              a.col-lg-12.col-sm-6.hi-icon.hi-icon-mobile(href='#set-3')
+              p.col-lg-12.col-sm-6
+                 |De nouveaux enjeux se posent alors à la DSI qui a son propre schéma directeur
+                 |Définition du nouveau poste de travail : PC, laptop, smartphone, tablettes, BYOD
+                 |Sécurisation des informations
+                 |La gestion de ce nouveau parc informatique
+                 |L'encadrement des pratiques et usages
+                 |Les aider à faire venir les nouveaux usages dans leur entreprise
+                 |Trouver de nouveaux vecteurs de communication. 
+                 |Nous mettons au service de vos projets notre expertise sur le développement .Net
+            .col-lg-4.col-sm-12
+              a.col-lg-12.col-sm-6.hi-icon.hi-icon-contract(href='#set-3')
+              p.col-lg-12.col-sm-6
+                 |Le monde de l'entreprise est soumis à diverses pressions aussi bien internes qu'externes :
+                 |Les usages clients changent: la grande vague de la consumérisation
+                 |Les technologies évoluent vite : réseaux, puissance matériels, ...
+                 |Le marché devient de plus en plus concurrentiel et difficile : il faut savoir se différencier et innover
+                 |Un environnement légal et social : propre à chaque métier et à l'organisation de l'entreprise
+                 |Nous mettons au service de vos projets notre expertise dans les produits Microsoft garantissant à votre entreprise mobilité et productivité.
+    script.
+        // Scrollspy fluide
+        $(function () {
+        $('header a').on('click', function(e) {
+        e.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+        scrollTop: $(this.hash).offset().top
+        }, 1000, function(){
+        window.location.hash = hash;
+        });
+        });
+        });
+    // FlexSlider
+    script(defer='', src='/javascripts/jquery.flexslider.js')
+    script(type='text/javascript').
+        $(function () {
+        SyntaxHighlighter.all();
+        });
+        $(window).load(function () {
+        $('.flexslider').flexslider({
+        animation: "slide",
+        start: function (slider) {
+        $('body').removeClass('loading');
+        }
+        });
+        });
+    // Syntax Highlighter
+    script(type='text/javascript', src='/javascripts/shCore.js')
+    script(type='text/javascript', src='/javascripts/shBrushXml.js')
+    script(type='text/javascript', src='/javascripts/shBrushJScript.js')
+    script(type='text/javascript', src='/javascripts/shBrushCss.js')
+    // Optional FlexSlider Additions
+    script(src='/javascripts/jquery.easing.js')
+    script(src='/javascripts/jquery.mousewheel.js')
+    script(defer='', src='/javascripts/demo.js')

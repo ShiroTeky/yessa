@@ -1,0 +1,26 @@
+extends layout
+
+block content
+ hgroup.title
+      h1 Contactez-nous
+    section.contact
+      div
+        section.col-lg-12
+          form.form-group(role='form', method='post', action='/contact')
+            fieldset
+              label VOTRE NOM :
+              input.form-control(type='text', name='name',id='name', placeholder='Votre nom ici')
+              label VOTRE EMAIL :
+              input.form-control(type='email', name='email',id='email', placeholder='Votre email ici')
+              label(for='textarea') VOTRE MESSAGE :
+              textarea.form-control(rows='4', name='textarea',id='textarea')
+              input(name='submit', type='submit',value='Envoyer', id='submit', style='display: inline-block;background: #0c3464;color: #fff;padding: 8px 15px;text-decoration: none;')
+        .col-lg-12
+          h2 Informations pratiques
+          p
+            | Si vous êtes intéressés par nos offres n'hesitez pas à nous contacter ou à vous rendre à notre siége
+        .col-lg-12#map
+        script(src='/javascripts/position.js')
+        script(async defer='', 
+        src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCYqM6BUsOsHcp5Ua0Zz2_4_lVEPH3girM&callback=initMap')
+        

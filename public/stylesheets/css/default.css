@@ -1,0 +1,94 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+#set-1 {
+	background: #41ab6b;
+}
+
+#set-2 {
+	background: #eea303;
+}
+
+#set-3{
+	background: #1e212a;
+}
+#set-3 .hi-icon-wrap div{
+	/*border-left: 1px solid #73787c;*/
+    border-top: 1px solid #1e212a;
+}
+
+#set-3 div p{
+    background-color: rgba(215, 216, 219, 0.52);
+    color:#6d6d6d;
+    padding:20px 20px 20px 20px;
+}
+
+#set-4 {
+	background: #0e83cd;
+}
+
+#set-5 {
+	background: #702fa8;
+}
+
+#set-6 {
+	background: #64bb5d;
+}
+
+#set-7 {
+	background: #d54f30;
+}
+
+#set-8 {
+	background: #3851bc;
+}
+
+#set-9 {
+	background: #96a94b;
+}
+
+@media screen and (max-width: 800px) {
+
+	.hi-icon {
+		margin: 15px !important;
+	}
+        #set-3{
+	/*background: #1e212a;*/
+    background:rgba(16, 16, 15, 0.98)
+   }
+    #set-3 div p{
+    background-color: rgba(16, 16, 15, 0.98);
+    color:#6d6d6d;
+    padding:20px 20px 20px 20px;
+}
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+    #set-3{
+	/*background: #1e212a;*/
+    background:rgba(16, 16, 15, 0.98)
+   }
+    #set-3 div p{
+    background-color: rgba(16, 16, 15, 0.98);
+    color:#6d6d6d;
+    padding:20px 20px 20px 20px;
+}
+}
