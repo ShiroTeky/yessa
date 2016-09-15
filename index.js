@@ -6,7 +6,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var http = require('http');
 var routes = require('./routes/index');
-var io = require('socket.io')(http);
 
 var app = express();
 
@@ -66,24 +65,6 @@ app.use(function(err, req, res, next) {
   });
 });
 
-// listen socket io
-io.on('connection', function(socket){
-    /**
-   * Log de connexion et de déconnexion des utilisateurs
-   */
-  console.log('a user connected');
-  socket.on('disconnect', function () {
-    console.log('user disconected');
-  });
-
-  /**
-   * Réception de l'événement 'chat-message' et réémission vers tous les utilisateurs
-   */
-  socket.on('chat-message', function (message) {
-    socket.emit('chat-message',message);
-    console.log('message : ' + message.text);
-  });
-});
 
 http.createServer(app).listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
