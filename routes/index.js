@@ -23,6 +23,14 @@ exports.contact = function (req, res) {
     res.render('contact', { title: 'Contact', year: new Date().getFullYear(), message: 'Your contact page' });
 };
 
+exports.materiels = function(req,res){
+    res.render('materiels',{title:'Materiels',year: new Date().getFullYear(), message: 'Your catalog and store'});
+};
+
+exports.details = function(req,res){
+    res.render('details',{title:'Details',year: new Date().getFullYear(), message: 'Your product and description'});
+};
+
 exports.send=function(req, res){
 
 	var nodemailer = require('nodemailer');

@@ -1,0 +1,35 @@
+{
+    "computers":
+    [
+        {
+            "Product":"Lenovo 1",
+            "Categorie":"Laptop",
+            "Image":"/materiels/lenovo.jpg",
+            "ShortDescription":"",
+            "FullDescription":"",
+            "Manufacturer":"",
+            "OldPrice":"",
+            "Price":"0"
+        },
+        {
+            "Product":"Lenovo 2",
+            "Categorie":"Laptop",
+            "Image":"/materiels/lenovo.jpg",
+            "ShortDescription":"",
+            "FullDescription":"",
+            "Manufacturer":"",
+            "OldPrice":"",
+            "Price":"0"
+        },
+        {
+            "Product":"Lenovo 3",
+            "Categorie":"Laptop",
+            "Image":"/materiels/lenovo.jpg",
+            "ShortDescription":"",
+            "FullDescription":"",
+            "Manufacturer":"",
+            "OldPrice":"",
+            "Price":"0"
+        }
+    ]
+}

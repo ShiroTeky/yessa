@@ -28,11 +28,11 @@ app.get('/', routes.index);
 app.get('/product', routes.product);
 app.get('/about', routes.about);
 app.get('/contact', routes.contact);
+app.get('/materiels', routes.materiels);
+
 
 //Contact Post request
 app.post('/contact', routes.send);
-
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

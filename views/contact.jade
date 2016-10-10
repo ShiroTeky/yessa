@@ -1,9 +1,11 @@
 extends layout
 
 block content
- hgroup.title
-      h1 Contactez-nous
-    section.contact
+    section
+      .services-offer
+        h3.section-title
+            span Contactez-nous
+        .row
       div
         section.col-lg-12
           form.form-group(role='form', method='post', action='/contact')

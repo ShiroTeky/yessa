@@ -13,6 +13,7 @@ html
     script(src='/javascripts/modernizr-2.6.2.js')
     script(src='/javascripts/jquery-1.10.2.min.js')
     script(src='/javascripts/bootstrap.min.js')
+
  body
     .container
       header
@@ -20,10 +21,10 @@ html
           .col-lg-8
             span
               i.fa.fa-phone.fa-2x
-              | +225 59 809314/+225 08 897118
+              |   +225 59 809314 / +225 08 897118 
             span
               i.fa.fa-envelope-o.fa-2x
-              |  commercial@yessa.net
+              |   commercial@yessa.net
           .col-lg-4
             ul.social-icons
               li
@@ -41,9 +42,9 @@ html
       .row
         .col-lg-8
           .site-title
-            img(src='./images/logobleu.jpg', alt='#')
+            img(src='/images/logobleu.jpg', alt='#')
             p
-              a(href='./')
+              a(href='/')
                 | YESSA 
                 span#titleLogo Technologies
           .site-offre
@@ -57,7 +58,7 @@ html
               span.icon-bar
               span.icon-bar
             a(href='/')    
-              img.navbar-brand(src='./images/home.png', alt='#')
+              img.navbar-brand(src='/images/home.png', alt='#')
           .collapse.navbar-collapse
             ul.nav.navbar-nav
               li
@@ -68,7 +69,9 @@ html
                 a(href='/About') Présentation
               li
                 a(href='/Contact') Contact
-      div
+              li
+                a(href='/Materiels') Catalogues et materiels informatiques
+      div.container-fluid
         block content
       footer
         .footer-wrap
