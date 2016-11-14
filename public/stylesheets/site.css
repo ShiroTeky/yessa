@@ -143,7 +143,7 @@ padding-top: 20px;
 footer {
 clear: both;
 background-color: #242424;
-font-size: .8em;
+font-size: 1.0em;
 height: 100px;
 }
 
@@ -258,6 +258,18 @@ text-transform: uppercase;
  list-style: none;
 float: left;
 width: auto;
+}
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+    .nav li{
+        border-right: #dd503f solid 1px;
+        list-style: none;
+        float: none;
+        width: auto;
+}
+
 }
 .nav li a{
 display: block !important;
@@ -421,7 +433,7 @@ font-weight: 700;
 }
 
 .social-icons li {
-display: inline;
+display: block;
 }
 
 /* login page */
@@ -907,7 +919,18 @@ border-bottom: none;
 }
 
 .footer .panel-group .panel-info{
-    border-left-style:ridge;
+    /*--border-left-style:ridge;*/
     border-left-color:#464646;
 }
 #map { height: 300px; }
+
+   /*--CATALOGUE*/
+.product-name a:link, a:visited, a:active, a:hover {
+    color: #da3a3a;
+    text-decoration: none;
+}
+
+.value a:link, a:visited, a:active, a:hover {
+    color: #da3a3a;
+    text-decoration: none;
+}

@@ -7,7 +7,7 @@ block content
             span Contactez-nous
         .row
       div
-        section.col-lg-12
+        section.col-lg-8
           form.form-group(role='form', method='post', action='/contact')
             fieldset
               label VOTRE NOM :
@@ -17,6 +17,9 @@ block content
               label(for='textarea') VOTRE MESSAGE :
               textarea.form-control(rows='4', name='textarea',id='textarea')
               input(name='submit', type='submit',value='Envoyer', id='submit', style='display: inline-block;background: #0c3464;color: #fff;padding: 8px 15px;text-decoration: none;')
+        section.col-lg-4
+          div#dccn-db1ee9db45
+          script(src='/javascripts/pub_ms.js')
         .col-lg-12
           h2 Informations pratiques
           p

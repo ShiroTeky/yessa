@@ -295,4 +295,17 @@ html[xmlns] .flexslider .slides {
     opacity: 1;
     right: 10px;
   }
+  .flex-caption{
+    position: initial;
+    bottom:50px;
+    width:auto;
+    background-color:rgba(64, 65, 68, 0.8);
+    color:#ffffff;
+    padding-left:10px;
+    padding-bottom:10px;
+    padding-top:10px;
+    margin-left:0;
+    /* margin-left: 20px; */
+
+}
 }
