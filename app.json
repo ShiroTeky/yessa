@@ -3,5 +3,6 @@
   "description": "Website Yessa Technologies",
   "repository": "https://github.com/ShiroTeky/yessa.git",
   "keywords": ["node", "express", "static"],
-  "image": "heroku/nodejs"
+  "image": "heroku/nodejs",
+  "stack": "heroku-18"
 }
